@@ -1,0 +1,193 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+
+        app:title="@string/app_name"
+        app:titleTextColor="#FBF8F8" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@android:color/system_accent2_600"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        />
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:hint="Name of the Trip"
+        android:inputType="text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/edittext_border"
+
+        />
+
+    <TextView
+        android:id="@+id/destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Destination"
+        android:textColor="@android:color/system_accent2_600"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        />
+    <EditText
+        android:id="@+id/input_destination"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:hint="Destination"
+        android:inputType="text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_border"
+        android:paddingLeft="15dp"
+        />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of the Trip"
+        android:textColor="@android:color/system_accent2_600"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        />
+    <EditText
+        android:id="@+id/input_date"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:hint="dd/mm/yy"
+        android:inputType="datetime"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/edittext_border"
+        />
+
+    <TextView
+        android:id="@+id/require"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Require Risks Assessment"
+        android:textColor="@android:color/system_accent2_600"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/input_require"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <RadioButton
+            android:id="@+id/input_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Yes"
+            android:textColor="@android:color/darker_gray"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/input_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:layout_marginLeft="130dp"
+            android:textColor="@android:color/darker_gray"
+
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textColor="@android:color/system_accent2_600"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        />
+    <EditText
+        android:id="@+id/input_description"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:hint="Description ..."
+        android:inputType="textMultiLine"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/edittext_border"
+
+        />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/blue"
+        android:text="Add To Database"
+        android:textColor="#F8F5F5" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:paddingTop="25dp"
+            >
+            <Button
+                android:text="Home"
+                android:layout_marginLeft="1dp"
+                android:backgroundTint="@color/black"
+                />
+            <Button
+                android:text="Home"
+                android:layout_marginLeft="19dp"
+                android:backgroundTint="@color/black"
+                />
+            <Button
+                android:text="Tab3"
+                android:layout_marginLeft="19dp"
+                android:backgroundTint="@color/black"
+                />
+            <Button
+                android:text="Tab4"
+                android:layout_marginLeft="19dp"
+                android:backgroundTint="@color/black"
+                />
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>
+

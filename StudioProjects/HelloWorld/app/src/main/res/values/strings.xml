@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Home</string>
+    <string name="hello_world">Hello World from String Resources</string>
+    <string name="course_name">COMP1786 Mobile Development</string>
+    <string name="novalue">You need to fill all required \n fields</string>
+</resources>

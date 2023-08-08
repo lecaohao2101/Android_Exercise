@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DisplayInfo"
+    android:background="@color/black"
+    >
+
+    <TableLayout
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="250dp"
+        android:background="#E9E9ED"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destination"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/require"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Risk"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/button_close_info"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Close"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textAllCaps="false"
+            />
+
+    </TableLayout>
+
+</LinearLayout>
